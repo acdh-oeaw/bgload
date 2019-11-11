@@ -62,7 +62,7 @@ To copy and deploy new databasae to varuna make sure that there is enough free s
 * Copy new database: scp projectname@servername.arz.oeaw.ac.at:/home/projectname/path-to-the-bgload-dir/dbname.jnl /opt/jetty/acdh_base/blazegraph/dbname.jnl
 * Restart jetty on varuna: service jetty restart.
 * Inform user that the database is deployed. 
-* If everything is okay remove backup file: rm -f /opt/jetty/acdh_base/blazegraph/back_date_dbname.jnl
+* If everything is okay, remove backup file: rm -f /opt/jetty/acdh_base/blazegraph/back_date_dbname.jnl
 
 
 **Blazegraph Rest API Script - BGloadRestAPI.sh**
