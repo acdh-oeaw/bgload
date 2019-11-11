@@ -29,13 +29,13 @@ Login to your project (linux account) over ssh: ssh projectname@servername.arz.o
 **Instructions for ACDH sysadmins**
 
 To clone the database from varuna to some project
-a) login to varuna over ssh ssh useername@varuna.arz.oeaw.ac.at
-b) switch to the jetty user: sudo bash & su jetty
-c) add following public ssh key to the project in which you want to copy the database 
+* login to varuna over ssh ssh useername@varuna.arz.oeaw.ac.at
+* switch to the jetty user: sudo bash & su jetty
+* add following public ssh key to the project in which you want to copy the database 
 
 `ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDUec2dufEVYHQjg3jmm+DVTWxdZ/+jeLn69EcQ90L8DBi+uiyapieec4n5OSc2CFj8CZgNQrBkTCP01g1uNkbqkmQMzMJPtzgg1PHg0xizmbybDaKEV7ewIDvk7jJeXob+Fq1ZwIc8QEJs0i4l8BFeQN6HwWdtbyA3V+/N7OYsBJNdJCQRJJvJrio+g/eA4wYal6Q2InaEauQWQyho5UWIKRJZ20oCR8PFaHG5+HHBj6tNcYK3C68bTHrrwz2d6AVBbkCTgeWjUkSaQ/2iA9w4jqJTJ9LE97ryxHX4MNKONu9AkndkZp+F9DCQTV3nz6eTJPdB5c2qQMy6Ys+Eu63rLCxLWAWjCgW9Z3f72kSrcEa8Iulc/vKuNuxjFXDEOFcZXgddKX5cMOdtpaxZfrKWeRhryTAIrNaIuYaLZX8bquXUL1UgBSdnufcEy/24Uehaz5G+HyJKNgd/XYVwADkC7aI2KtRuflC9SJGRf4TzIQQ4tMtEuwpjQn0v9nwr73/Lfw7QANdvy0vVtt1Mxw02wy/Zh4p8bpX4QuCWEg4Vi2HCGqvVQcR1zjegug0tnFRM+8+pimT+5nt/rvg5ueGnxuOtut9XK89mQU3fPCmnAxkyIYM76vqP91F0o+YalO1eGHppY7ClW9vW7O0GQB6ODFg8NnE21Mx986OkseA0VQ== blazegraph.varuna@oeaw.ac.at`
 
-d) Execute: scp /opt/jetty/acdh_base/blazegraph/dbname.jnl projectname@servername.arz.oeaw.ac.at:/home/projectname/path-to-the-bgload-dir/;
+* Execute: scp /opt/jetty/acdh_base/blazegraph/dbname.jnl projectname@servername.arz.oeaw.ac.at:/home/projectname/path-to-the-bgload-dir/;
 
 6. Make sure that script has rights to execute: chmod +x BGLocalBulkLoad.sh
 7. Start new screen session and execute the BGLocalBulkLoad.sh script: ./BGLocalBulkLoad.sh 
