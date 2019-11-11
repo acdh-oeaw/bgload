@@ -92,7 +92,7 @@ This script should be used only for smaller dumps!
 7. Start new screen session by typing screen and execute the BGloadRestAPI.sh script by typing: ./BGloadRestAPI.sh 
 8. Leave the screen session by executing: ctrl + a + d 
 9. After some time to return back to the screen session type: screen -r
-10. At the end when you finish with importing type exit to remove the screen session.
+10. At the end when you finished with importing type exit to remove the screen session.
 
 After executing script will ask you for some input parameters:
 
