@@ -31,3 +31,4 @@ do
 
 echo "done."
 done >> logs/log-import-made-at-`date +\%Y-\%m-\%d_\%H:\%M:\%S`-by-imporscript.log 2>&1; 
+echo "Import is finished";
