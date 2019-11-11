@@ -90,13 +90,13 @@ This script should be used only for smaller dumps!
 7. Execute the BGLocalBulkLoad.sh script:./BGloadRestAPI.sh 
 
 After executing script will ask you for some input parameters:
+
 * Please enter database name: - Specify the database name
 * Please enter database user: - Specify the database user (on varuna it is usualy the same as the database name)
 * Please enter database password: - Enter the db password
 * Please enter path to the directory with the rdf files (Example:dump): - Enter the name of the directory you created in step 4. (If you followed instructions the name is the dump)
 * Please specify the default graph. This is required for quads mode. (Example: http://example.org): - Add the graph name under which your dump will be imported.
 * Please specify the MIME Type (Example: application/rdf+xml): - Specify the MIME type of files you want to import. Following mimetypes can be used:
-
 
 | MIME Type                                         | File extension          | Charset  | Name                                  | URL                                                      | RDR? | Comments                                                                    |
 |---------------------------------------------------|-------------------------|----------|---------------------------------------|----------------------------------------------------------|------|-----------------------------------------------------------------------------|
