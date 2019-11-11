@@ -123,4 +123,4 @@ How to make a dump over Blazegraph's Rest API
 
 How to **upload a single file** over Blazegraph's Rest API
 
-`curl -x POST -H 'Content-Type:application/rdf+xml' --data-binary '@yourdump.rdf' http://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql?context-uri=http://example.org 
+`curl -x POST -H 'Content-Type:application/rdf+xml' --data-binary '@yourdump.rdf' http://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql?context-uri=http://example.org` 
