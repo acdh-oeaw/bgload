@@ -1,7 +1,7 @@
 # Blazegraph Data Load Scripts and Commands
 
 
-Blazegraph Local Bulk Load Script - BGLocalBulkLoad.sh
+**Blazegraph Local Bulk Load Script - BGLocalBulkLoad.sh**
 
 The script BGLocalBulkLoad.sh may be used to create and/or load RDF data into a local Blazegraph database instance.
 The data files may be compressed using zip or gzip, but the script does not support multiple data files within a single archive.
