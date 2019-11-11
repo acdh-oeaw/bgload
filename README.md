@@ -66,7 +66,7 @@ To copy and deploy new databasae to varuna make sure that there is enough free s
 
 **Blazegraph Rest API Script - BGloadRestAPI.sh**
 
-The script BGloadRestAPI.sh may be used to load multiple RDF files into a remote Blazegraph database instance.
+The script BGloadRestAPI.sh may be used to **load multiple RDF files** into a remote Blazegraph database instance.
 This script should be used only for smaller dumps!
 
 **Requirements**
@@ -121,6 +121,6 @@ How to make a dump over Blazegraph's Rest API
 
 `curl -X POST http://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql --data-urlencode 'query=CONSTRUCT WHERE {?s ?p ?o }' -H 'Accept:application/rdf+xml'  > db_dump.rdf`
 
-How to upload a single file over Blazegraph's Rest API
+How to **upload a single file** over Blazegraph's Rest API
 
 `curl http://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql -H 'Content-Type: application/sparql-update; charset=UTF-8' -H 'Accept: application/rdf+xml' -d@your-dump.rdf`
