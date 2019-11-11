@@ -113,7 +113,7 @@ After executing script will ask you for some input parameters:
 | text/x-nquads                                     | .nq                     | US-ASCII | NQUADS                                | http://sw.deri.org/2008/07/n-quads/                      |      | Parser only before bigdata 1.4.0.                                           |
 | application/sparql-results+json, application/json | .srj, .json             | UTF-8    | Bigdata JSON interchange for RDF/RDF* | N/A                                                      | Yes  | bigdata json interchange supports RDF RDR data and also SPARQL result sets. |
 
-**Other useful commands:**
+**Other useful Blazegraph's Rest API commands:**
 
 How to make a dump over Blazegraph's Rest API
 
