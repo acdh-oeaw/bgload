@@ -117,7 +117,7 @@ After executing script will ask you for some input parameters:
 
 **Other useful Blazegraph's Rest API commands:**
 
-How to make a dump over Blazegraph's Rest API
+How to **make a dump** over Blazegraph's Rest API
 
 `curl -X POST http://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql --data-urlencode 'query=CONSTRUCT WHERE {?s ?p ?o }' -H 'Accept:application/rdf+xml'  > db_dump.rdf`
 
