@@ -88,7 +88,7 @@ This script should be used only for smaller dumps!
 4. Make a directory for the rdf files or the dump: mkdir dump
 5. Put your rdf files or dumps in the dump dir
 6. Make sure that script has rights to execute: chmod +x BGloadRestAPI.sh
-7. Start new screen session by typing screen and execute the BGloadRestAPI.sh script by typing:./BGloadRestAPI.sh 
+7. Start new screen session by typing screen and execute the BGloadRestAPI.sh script by typing: ./BGloadRestAPI.sh 
 8. Leave the screen session by executing: ctrl + a + d 
 9. After some time to return back to the screen session type: screen -r.
 
