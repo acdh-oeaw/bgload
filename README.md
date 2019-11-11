@@ -66,7 +66,7 @@ To copy and deploy new databasae to varuna make sure that there is enough free s
 
 **Blazegraph Rest API Script - BGloadRestAPI.sh**
 
-The script BGloadRestAPI.sh may be used to load RDF data into a remote Blazegraph database instance.
+The script BGloadRestAPI.sh may be used to load multiple RDF files into a remote Blazegraph database instance.
 This script should be used only for smaller dumps!
 
 **Requirements**
