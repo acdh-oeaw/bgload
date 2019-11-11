@@ -38,7 +38,7 @@ To clone the database from varuna to some project
 * Execute: scp /opt/jetty/acdh_base/blazegraph/dbname.jnl projectname@servername.arz.oeaw.ac.at:/home/projectname/path-to-the-bgload-dir/;
 
 6. Make sure that script has rights to execute: chmod +x BGLocalBulkLoad.sh
-7. Start new screen session and execute the BGLocalBulkLoad.sh script: ./BGLocalBulkLoad.sh 
+7. Start new screen session by typing screen and execute the BGLocalBulkLoad.sh script: ./BGLocalBulkLoad.sh 
 
 * After executing, script will ask you for some input parameters:
 * Please enter amount of RAM that will be used for processing (Example:8g) - Make sure that server has enough RAM but specifying 8g should be available on all ACDH servers.
