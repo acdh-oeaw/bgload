@@ -26,8 +26,8 @@ for file in $DUMP/*
 
 do
     echo "importing: $file to the db on $DB_SERVER"
-    curl -X POST -H 'Content-Type:'$MIME_TYPE --data-binary @$file http://$DB_USER:$DB_PASS@$DB_SERVER/$DB_NAME/sparql?context-uri=$DEFAULT_GRAPH >> logs/log-import-made-at-`date +\%Y-\%m-\%d_\%H:\%M:\%S`-by-imporscript.log 2>&1
+    curl -X POST -H 'Content-Type:'$MIME_TYPE --data-binary @$file http://$DB_USER:$DB_PASS@$DB_SERVER/$DB_NAME/sparql?context-uri=$DEFAULT_GRAPH
     echo "finished by processing $file"
 
 echo "done."
-done; 
+done >> logs/log-import-made-at-`date +\%Y-\%m-\%d_\%H:\%M:\%S`-by-imporscript.log 2>&1; 
