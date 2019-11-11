@@ -76,6 +76,7 @@ This script should be used only for smaller dumps!
 * Gitlab account and membership in the ACDH-OEAW group
 * Enough space on disks on local server where the script will be executed
 * Valid RDF dump
+* curl
 * The database name credentials if the database is deployed on varuna
 
 
@@ -112,4 +113,12 @@ After executing script will ask you for some input parameters:
 | text/x-nquads                                     | .nq                     | US-ASCII | NQUADS                                | http://sw.deri.org/2008/07/n-quads/                      |      | Parser only before bigdata 1.4.0.                                           |
 | application/sparql-results+json, application/json | .srj, .json             | UTF-8    | Bigdata JSON interchange for RDF/RDF* | N/A                                                      | Yes  | bigdata json interchange supports RDF RDR data and also SPARQL result sets. |
 
+**Other useful commands:**
 
+How to make a dump over Blazegraph's Rest API
+
+`curl -X POST http://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql --data-urlencode 'query=CONSTRUCT WHERE {?s ?p ?o }' -H 'Accept:application/rdf+xml'  > db_dump.rdf`
+
+How to upload a single file over Blazegraph's Rest API
+
+`curl http://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql -H 'Content-Type: application/sparql-update; charset=UTF-8' -H 'Accept: application/rdf+xml' -d@your-dump.rdf`
