@@ -16,7 +16,7 @@ for file in $DUMP/*
 
 do
     echo "importing: $file to the db on $DB_SERVER"
-    curl -X POST -H 'Content-Type:'$MIME_TYPE --data-binary @$file http://$DB_USER:$DB_PASS@$DB_SERVER/$DB_NAME/sparql?context-uri=$DEFAULGRAPH
+    curl -X POST -H 'Content-Type:'$MIME_TYPE --data-binary @$file http://$DB_USER:$DB_PASS@$DB_SERVER/$DB_NAME/sparql?context-uri=$DEFAULT_GRAPH
     echo "$file is imported to the db on $DB_SERVER"
 
 echo "done."
