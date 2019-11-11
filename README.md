@@ -17,7 +17,7 @@ This script should be used only for the very big dumps!
 * Valid RDF dump
 * ACDH users should know their the database name if it is deployed on varuna.arz.oeaw.ac.at
 
-How to use script BGLocalBulkLoad.sh
+**How to use script BGLocalBulkLoad.sh**
 
 Login to your project (linux account) over ssh: ssh projectname@servername.arz.oeaw.ac.at 
 1. Clone the bgload project by: git clone https://gitlab.com/acdh-oeaw/bgload.git
