@@ -134,6 +134,10 @@ How to **update** database over Blazegraph's Rest API
 
 `curl  https://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql -H 'Content-Type: application/sparql-update; charset=UTF-8' -H 'Accept: text/boolean' -d@your-sparql.file`
 
+**The rdfsplit.sh script**
+
+The shell script rdfsplit.sh can be used to split huge RDF files.
+
 **How to use script rdfsplit.sh**
 
 1. Login to your project (linux account) over ssh: ssh projectname@servername.arz.oeaw.ac.at 
