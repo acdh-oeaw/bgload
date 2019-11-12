@@ -133,3 +133,27 @@ How to **upload a single file** over Blazegraph's Rest API
 How to **update** database over Blazegraph's Rest API 
 
 `curl  https://dbuser:dbpassword@varuna.arz.oeaw.ac.at:8080/dbname/sparql -H 'Content-Type: application/sparql-update; charset=UTF-8' -H 'Accept: text/boolean' -d@your-sparql.file`
+
+**How to use script rdfsplit.sh**
+
+1. Login to your project (linux account) over ssh: ssh projectname@servername.arz.oeaw.ac.at 
+2. Clone the bgload project by: git clone https://gitlab.com/acdh-oeaw/bgload.git
+3. Change to the bgload dir: cd bgload
+4. Put your rdf file in bgload dir
+5. Make sure that script has rights to execute: chmod +x rdfsplit.sh
+6. Execute the script: nohup ./rdfsplit &
+7. leave nohup by ctrl+c
+8. check nohup.log by executing: tail -f nohup.log
+
+The "splitlines" is a variable that tells the script after how many Turtle triples groups it should split.
+At the moment, we simply split by assuming that each trailing '.' at the end of a line ends a triples group.
+The default is 200000000 but depending on the size of your ttl.gz or your memory you may want to decide for smaller chunks.
+The splitlines can be changed/overridden with option -l 
+
+`Example: nohup ./rdfsplit -l 10000 &`
+
+**Notes**: 
+* Splitting 100G large .gz file (uncompressed 1,5T) lasts 24h. After splitting each .gz compressed file is 2G large (uncompressed 20G). 
+* Splitted files can be loaded in the Blazegraph only over BGLocalBulkLoad.sh. 
+* The script BGloadRestAPI.sh works only with uncompressed files.
+
