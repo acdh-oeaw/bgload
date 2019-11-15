@@ -38,7 +38,7 @@ To clone the database from varuna to some project
 * Execute: scp /opt/jetty/acdh_base/blazegraph/dbname.jnl projectname@servername.arz.oeaw.ac.at:/home/projectname/path-to-the-bgload-dir/;
 
 6. Make sure that script has rights to execute: chmod +x BGLocalBulkLoad.sh
-7. Start new screen session by typing screen and execute the BGLocalBulkLoad.sh script: ./BGLocalBulkLoad.sh 
+7. Start new screen session by typing screen and execute the BGLocalBulkLoad.sh script: ./BGLocalBulkLoad.sh (to give a name for the screen session screen -S your_session_name)
 
 After executing, script will ask you for some input parameters:
 
@@ -90,7 +90,7 @@ This script should be used only for smaller dumps!
 4. Make a directory for the rdf files or the dump: mkdir dump
 5. Put your rdf files or dumps in the dump dir
 6. Make sure that script has rights to execute: chmod +x BGloadRestAPI.sh
-7. Start new screen session by typing screen and execute the BGloadRestAPI.sh script by typing: ./BGloadRestAPI.sh
+7. Start new screen session by typing screen and execute the BGloadRestAPI.sh script by typing: ./BGloadRestAPI.sh (to give a name for the screen session screen -S your_session_name)
 8. Leave the screen session by executing: ctrl + a + d 
 9. Check log file in the dir named logs that is automatically created by the script.
 10. After some time to return back to the screen session type: screen -r.  
