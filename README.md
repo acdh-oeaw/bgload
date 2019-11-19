@@ -157,7 +157,7 @@ The splitlines can be changed/overridden with option -l
 `Example: nohup ./rdfsplit -l 10000 &`
 
 **Notes**: 
-* Splitting 100G large .gz file (uncompressed 1,5T) lasts 24h. After splitting each .gz compressed file is 2G large (uncompressed 20G). 
+* Splitting 100G large .gz file (uncompressed 1,5T) lasts 24h. After splitting each .gz compressed file is 2G large (uncompressed 30G). 
 * Splitted files can be loaded in the Blazegraph only over BGLocalBulkLoad.sh. 
 * The script BGloadRestAPI.sh works only with uncompressed files.
 
