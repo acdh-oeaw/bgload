@@ -95,7 +95,6 @@ java  -Xmx${RAM} -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 \
       com.bigdata.rdf.store.DataLoader \
       -defaultGraph ${DEFAULGRAPH} \
       -namespace ${NAMESPACE} \
-      -durableQueues=true \
       -verbose  \
       propertyFile ${IMPORTDIR}/*  >> logs/log-import-made-at-`date +\%Y-\%m-\%d_\%H:\%M:\%S`-by-imporscript.log 2>&1
 
