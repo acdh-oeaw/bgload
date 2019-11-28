@@ -145,7 +145,7 @@ The shell script rdfsplit.sh can be used to split huge RDF files.
 3. Change to the bgload dir: cd bgload
 4. Put your rdf file in bgload dir
 5. Make sure that script has rights to execute: chmod +x rdfsplit.sh
-6. Execute the script: nohup ./rdfsplit &
+6. Execute the script: nohup ./rdfsplit.sh -l 100000 dump_file.nt.gz &
 7. leave nohup by ctrl+c
 8. check nohup.log by executing: tail -f nohup.log
 
@@ -154,7 +154,7 @@ At the moment, we simply split by assuming that each trailing '.' at the end of 
 The default is 200000000 but depending on the size of your ttl.gz or your memory you may want to decide for smaller chunks.
 The splitlines can be changed/overridden with option -l 
 
-`Example: nohup ./rdfsplit -l 10000 &`
+`Example: nohup ./rdfsplit.sh -l 100000 dump_file.nt.gz &`
 
 **Notes**: 
 * Splitting 100G large .gz file (uncompressed 1,5T) lasts 24h. After splitting each .gz compressed file is 2G large (uncompressed 30G). Import of 1 uncompressed splitted file lasts 19h.
