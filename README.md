@@ -8,7 +8,7 @@ The data files may be compressed using zip or gzip, but the script does not supp
 This script should be used only for the very big dumps!
 
 **Two procedures to choose**
-* In any case, assemble data in the same data format in one folder, and process each folder separately (only nq, only turtle etc)
+* In any case, assemble data in the same data format in one folder (normally on ACDH server such as Herkules), and process each folder separately (only nq, only turtle etc)
 * Small to medium size data (up to c100GB uncompressed), use Blazegraph's Rest API commands (cURL) for single files below. Batch processing can be done with BGloadRestAPI.sh (See code above). It should be placed in the same folder as processing files and run it.
 * Large size data (from 100GB uncompressed), use BGLocalBulkLoad.sh below. It may be a good idea to split data into pieces beforehand to save processing time.
 
